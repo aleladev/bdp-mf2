@@ -7,7 +7,7 @@
     <title>Brasserie de Pépiole</title>
     <meta
       name="description"
-      content="Une bière artisanale brassée par une femme, Binouze Girl / Emilie à Six-Fours-les-Plages dans le Var. Venez nous voir pour en déguster toutes les déclinaisons !"
+      content="Une bière artisanale brassée par une femme, Binouze Girl / Emilie à Six-Fours-les-Plages dans le Var. Rendez-vous à la cave à vins de son mari pour en déguster toutes les déclinaisons (blanche, blonde, IPA, ambrée, brune, et même hybride au gré des envies) !"
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="ressources/Logo.ico" type="image/x-icon" />
@@ -15,9 +15,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Give+You+Glory&family=Gotu&family=Poppins&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <!--ajouter une section 1 ? Si oui, penser à changer body en section pour le CSS  -->
+    <body>
 
-  <!-- Header comportant la barre avec le titre et le menu -->
+  <!-- Header comportant la barre avec le titre (et le bouton hamburger)-->
     <header>
               <!-- Barre de titre -->
       <div class="container-jaune">
@@ -27,41 +28,54 @@
       </div>
     
               <!-- Menu de navigation -->
-      <div class="btn">
+      <!-- Bouton hamburger, animé par CSS et JavaScript pour petits écrans dans la barre de titre -->
+              <div class="btn">
         <div class="ligne"></div>
       </div>
 
     </header>
+    <!-- Menu de navigation, à utiliser en accordéon ou en barre pour plus grands écrans-->
     <nav>
         <ul class="liste">
-          <li class="items">
-              <span>Accueil</span>
+          <li class="items-accordeon">
+            <a href=""><span>Accueil</span></a>
           </li>
-          <li class="items">
-              <span>Nos bières</span>
+          <li class="items-accordeon"><a href="">
+              <a href=""><span>Nos bières</span></a>
           </li>
-          <li class="items">
-              <span>A propos</span>
+          <li class="items-accordeon">
+              <a href=""><span>A propos</span></a>
           </li>
-          <li class="items">
-              <span>Lieux de vente</span>
+          <li class="items-accordeon"><a href="">
+              <a href=""><span>Lieux de vente</span></a>
           </li>
-          <li class="items">
-              <span>Galerie</span>
+          <li class="items-accordeon"><a href="">
+              <a href=""><span>Galerie</span></a>
           </li>
-          <li class="items">
-              <span>Contact</span>
+          <li class="items-accordeon"><a href="">
+              <a href=""><span>Contact</span></a>
           </li>
-          <li class="items"><img class= "tampon-liste" src="ressources/tampon.png"  alt=""></li>
+          <li class="items-accordeon"><img class= "tampon-liste" src="ressources/tampon.png"  alt=""></li>
+          
         </ul>
+
     </nav>
-    
+
+    <ul class="container-vert">
+      <li class="items-barre"><a href="index.html">Accueil</li>
+      <li class="items-barre"><a href="bieres.html">Nos bières</a></li>
+      <li class="items-barre"><a href="">À propos</a></li>
+      <li class="items-barre"><a href="">Lieux de vente</a></li>
+      <li class="items-barre"><a href="">Galerie</a></li>
+      <li class="items-barre"><a href="">Contact</a></li>
+    </ul>
+      <!-- tampon et binouze girl à placer ou pas en fonction / peuvent être considérés individuellement -->
     <section class="illustration"> 
         <img class= "tampon" src="ressources/tampon.png" alt="image tampon brasserie">
         <img class="binouze_girl" src="ressources/binouze_girl.png" alt="mascotte binouze girl">
 
     </section>
-
+      <!-- Bienvenue / Texte / bouton capsule à placer ou pas en fonction / peuvent être considérés individuellement -->
     <section class="texte-intro">
       <h1>Bienvenue sur le site de la Brasserie de Pépiole&nbsp;! </h1>
        <p>Pour en apprendre plus sur nos bières, cliquez sur la capsule&nbsp;!</p>
